@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <style>
+     
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+
+header {
+    background-color: #ff5733;
+    color: white;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+
+.menu {
+    padding: 50px 20px;
+}
+
+.menu h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.menu-item {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    
+}
+
+.menu-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.menu-item h3 {
+    margin: 15px 0 5px;
+    font-size: 1.4em;
+    color: #ff5733;
+}
+
+.menu-item p {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 10px;
+}
+.order-btn {
+            padding: 15px 40px;
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+            background: linear-gradient(45deg, #ff416c, #ff4b2b);
+            border: none;
+            border-radius: 50px;
+            box-shadow: 0 5px 15px rgba(255, 65, 108, 0.5);
+            transition: 0.3s ease;
+            cursor: pointer;
+            z-index: 2;
+        }
+
+        .order-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(255, 65, 108, 0.7);
+        }
+
+        
+     
+        
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Delicious Bites</h1>
+        <p>Delicious meals crafted with love</p>
+    </header>
+
+    <section class="menu">
+        <h2>Our Special Menu</h2>
+        <div class="menu-container">
+            
+            <div class="menu-item">
+                <img src="burgger.png" alt="Burger">
+                <h3> Burger</h3>
+                <p>Juicy grilled beef patty with fresh vegetables.</p>
+                <span>Price-120 </span>
+            </div>
+
+            <div class="menu-item">
+                <img src="pizza1.png" alt="Pizza">
+                <h3>Pizza</h3>
+                <p>Fresh mozzarella, basil, and homemade tomato sauce.</p>
+                <span>Price-180 </span>
+            </div>
+
+            <div class="menu-item">
+                <img src="image.png" alt="Pasta">
+                <h3> Pasta</h3>
+                <p>Delicious creamy Alfredo sauce with Parmesan cheese.</p>
+                <span>Price-150 </span>
+            </div>
+
+            <div class="menu-item">
+                <img src="coffe.png" alt="Coffee">
+                <h3>Coffee</h3>
+                <p>Freshly brewed coffee with a hint of vanilla.</p>
+                <span>Price-80 </span>
+            </div>
+
+        </div>
+    </section>
+    <button class="order-btn"><a href="http://127.0.0.1:5501/orderfrom/index.html">Order</a></button>
+
+
+    
+
+   
+
+</body>
+</html>
+
+
+
+
+

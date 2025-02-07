@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Bites</title>
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+            scroll-behavior: smooth;
+            
+
+        body {
+            background-color: #111;
+            color: white;
+            background-image: url("image.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        
+
+        
+        
+       
+
+       
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+           
+            position: relative;
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .hero h1 {
+            font-size: 50px;
+            z-index: 2;
+        }
+
+        .hero p {
+            font-size: 22px;
+            margin: 15px 0;
+            z-index: 2;
+        }
+
+        .order-btn {
+            padding: 15px 40px;
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+            background: linear-gradient(45deg, #ff416c, #ff4b2b);
+            border: none;
+            border-radius: 50px;
+            box-shadow: 0 5px 15px rgba(255, 65, 108, 0.5);
+            transition: 0.3s ease;
+            cursor: pointer;
+            z-index: 2;
+        }
+
+        .order-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(255, 65, 108, 0.7);
+        }
+
+       
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: #222;
+            font-size: 16px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <section class="hero">
+        <h1>Welcome to Delicious Bites</h1>
+        <p>Experience the best taste in town!</p>
+        <button class="order-btn"><a href="http://127.0.0.1:5501/menu/menu1.html">Click Here</a></button>
+    </section>
+
+    <footer class="footer">
+        &copy; 2025 Delicious Bites. All rights reserved.
+    </footer>
+
+</body>
+</html>
